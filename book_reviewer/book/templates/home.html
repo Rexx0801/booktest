@@ -1,0 +1,272 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="caption">
+                <h2>Xin Chào, Tôi Là Phong-Một Người Thích Đọc Sách</h2>
+                <div class="line-dec"></div>
+                <p>Trang Web này là một nơi để tôi cũng như các bạn chia sẻ về các cuốn sách hay mà mình đã từng đọc. Tôi hi vọng nó sẽ lan tỏa thói quen đọc sách đến tất cả mọi người <3 .
+                <br><br>Nếu có những cuốn sách hay, hãy giới thiệu tới cho tôi <a rel="nofollow" href="https://www.facebook.com/i.am.hongphongpham/">Hong Phong Pham</a>.Xin cảm ơn các bạn đã ghé thăm .</p>
+                <div class="main-button">
+                  <a href="https://www.facebook.com/i.am.hongphongpham">Liên Hệ Ngay!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Banner Ends Here -->
+      
+      <!-- Featured Starts Here -->
+      <div class="featured-items">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <div class="line-dec"></div>
+                <h1>Một Vài Cuốn Sách Tôi Muốn Giới Thiệu Đến Bạn</h1>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="owl-carousel owl-theme">
+                <a href="https://tiki.vn/tuoi-tre-dang-gia-bao-nhieu-tai-ban-p113530805.html?itm_campaign=SRC_YPD_TKA_PLA_UNK_ALL_UNK_UNK_UNK_UNK_X.195911_Y.1778238_Z.3507784_CN.AUTO---Tuoi-Tre-%25C4%2590ang-Gia-Bao-Nhieu-%2528Tai-Ban%2529---2022%252F11%252F10-02%253A57%253A51&itm_medium=CPC&itm_source=tiki-ads&spid=113530807">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-01.jpg' %}" alt="Item 1">
+                    <h4>Tuổi Trẻ Đáng Giá Bao Nhiêu</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+                <a href="https://tiki.vn/tren-dinh-pho-wall-tai-ban-2021-p91625816.html?itm_campaign=SRC_YPD_TKA_PLA_UNK_ALL_UNK_UNK_UNK_UNK_X.201001_Y.1783321_Z.3534922_CN.AUTO---Tren-%25C4%2590inh-Pho-Wall-%2528Tai-ban-2021%2529---2022%252F11%252F24-05%253A43%253A22&itm_medium=CPC&itm_source=tiki-ads&spid=92558502">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-02.jpg' %}" alt="Item 2">
+                    <h4>Trên Đỉnh Phố Wall</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+                <a href="https://tiki.vn/linh-hon-cua-tien-the-soul-of-money-p71094783.html?itm_campaign=SRC_YPD_TKA_PLA_UNK_ALL_UNK_UNK_UNK_UNK_X.11444_Y.81464_Z.3494988_CN.Sieu-Co&itm_medium=CPC&itm_source=tiki-ads&spid=71094784">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-03.jpg' %}" alt="Item 3">
+                    <h4>Linh Hồn Của Tiền</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+                <a href="https://tiki.vn/dieu-quan-trong-nhat-the-most-important-thing-p38265901.html?itm_campaign=SRC_YPD_TKA_PLA_UNK_ALL_UNK_UNK_UNK_UNK_X.11447_Y.81470_Z.3494802_CN.Nen-Nhat&itm_medium=CPC&itm_source=tiki-ads&spid=38265904">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-04.jpg' %}" alt="Item 4">
+                    <h4>Điều Quan Trọng Nhất</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+                <a href="https://tiki.vn/dac-nhan-tam-kho-lon-p480040.html?spid=84283463">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-05.jpg' %}" alt="Item 5">
+                    <h4>Đắc Nhân Tâm</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+                <a href="https://tiki.vn/muon-kiep-nhan-sinh-2-p94173462.html?spid=95546997">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-06.jpg' %}" alt="Item 6">
+                    <h4>Muôn Kiếp Nhân Sinh</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+                <a href="https://tiki.vn/dieu-quan-trong-nhat-the-most-important-thing-p38265901.html?itm_campaign=SRC_YPD_TKA_PLA_UNK_ALL_UNK_UNK_UNK_UNK_X.11447_Y.81470_Z.3494802_CN.Nen-Nhat&itm_medium=CPC&itm_source=tiki-ads&spid=38265904">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-04.jpg' %}" alt="Item 7">
+                    <h4>Điều Quan Trọng Nhất</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+                <a href="https://tiki.vn/dac-nhan-tam-kho-lon-p480040.html?spid=84283463">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-05.jpg' %}" alt="Item 8">
+                    <h4>Đắc Nhân Tâm</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+                <a href="https://tiki.vn/muon-kiep-nhan-sinh-2-p94173462.html?spid=95546997">
+                  <div class="featured-item">
+                    <img src="{% static 'web_app/assets/images/item-06.jpg' %}" alt="Item 9">
+                    <h4>Muôn Kiếp Nhân Sinh</h4>
+                    <h6>88888 $</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Featred Ends Here -->
+
+      <form method="POST" class="example" action="" style="margin:auto;max-width:350px; border-radius: 20px;">
+        {% csrf_token %} 
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <br>
+
+      {% if result %}
+      {% for book in result %}
+      
+      <div class="card mx-auto" style="width:18rem; margin-bottom: 50px;" >
+        <a data-toggle="modal" data-target="#exampleModalLong" class="building-link"  data-name="{{ book.name }}" data-detail="{{ book.detail }}">
+        <img class="card-img-top" src={{book.image}}
+                    alt="Card image cap">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">
+                {{book.name}}
+            </h5>
+  
+            <p class="card-text">
+                {{book.detail}}
+            </p>
+            <p class="card-text" style="color: Blue;">
+              ${{book.amount}}
+          </p>
+          <center>
+          <a href="#link" class="btn btn-primary" role="button">Chi Tiết</a>
+        </center>
+        </div>
+      </div>
+    {% endfor %} 
+    {% else %}
+    {% for book in book %}
+    <div class="card mx-auto" style="width:18rem; margin-bottom: 50px;">
+      <a data-toggle="modal" data-target="#exampleModalLong" class="building-link"  data-name="{{ book.name }}" data-detail="{{ book.detail }}">
+      <img class="card-img-top" src={{book.image}}
+                  alt="Card image cap">
+      
+      <div class="card-body">
+          <h5 class="card-title">
+              {{book.name}}
+          </h5>
+
+          <p class="card-text" >
+             <details>
+              <summary style="color: Blue; font-weight: 600;">Xem Thêm</summary>
+              {{book.detail}}
+             </details>
+          </p>
+          <p class="card-text" style="color: Blue;">
+            ${{book.amount}}
+        </p>
+      </div>
+    </a>
+  </div>
+
+  {% endfor %} 
+ {% endif %} 
+      <!-- Subscribe Form Starts Here -->
+      <div class="subscribe-form">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <div class="line-dec"></div>
+                <h1>Hãy Đọc Cùng Tôi!</h1>
+              </div>
+            </div>
+            <div class="col-md-8 offset-md-2">
+              <div class="main-content">
+                <p>Mọi thắc mắc xin gửi email về hòm thư ở phía dưới hoặc ở phần liên hệ trong trang Web của tôi.</p>
+                <div class="container">
+                  <form id="subscribe" action="" method="get">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <fieldset>
+                          <input name="email" type="text" class="form-control" id="email" 
+                          onfocus="if(this.value == 'Your Email...') { this.value = ''; }" 
+                          onBlur="if(this.value == '') { this.value = 'Your Email...';}"
+                          value="Your Email..." required="">
+                        </fieldset>
+                      </div>
+                      <div class="col-md-5">
+                        <fieldset>
+                          <button type="submit" id="form-submit" class="button">Subscribe Now!</button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Subscribe Form Ends Here -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="building-name"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6 id="building-detail"></h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('.building-link').click(function(){
+      $('#building-name').html($(this).data('name'));
+      $('#building-detail').html($(this).data('detail'));
+  });
+  </script>
+{% endblock %}
